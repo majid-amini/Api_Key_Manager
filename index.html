@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/Home/home.css">
+    <title>API Key Manager</title>
+</head>
+
+<body>
+    
+    <main>
+        <section class="section_total">
+            <div class="left--total">
+                <form action="">   
+                        <div class="username--total">
+                            <h3>User Name</h3>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <div class="apikey--total">
+                            <h3>API Key</h3>
+                            <input type="text" name="apikey" id="apikey">
+                        </div>
+                        <div class="apisecret--total">
+                            <h3>API Secret</h3>
+                            <input type="text" name="apisecret" id="apisecret">
+                        </div>
+                        <div class="submit--total">
+                            <button id="btn_submit">Submit</button>
+                        </div>
+                </form>
+            </div>
+            
+            <div class="right--total">
+                <h2>API Key Manager</h2>
+                <div class="table_container">  
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>user Name</td>
+                            <td>API Key</td>
+                            <td>API Secret</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        <tr class="table_row">
+                            <td class="table_id_number">1</td>
+                            <td class="table_user_name">Majid</td>
+                            <td class="table_api_key">i believe in GOD</td>
+                            <td class="table_api_secret">xxxxx</td>
+                            <td class="table_buttons">
+                                <button id="btn_edit">Edit</button>
+                                <button id="btn_delete">Delete</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </section>
+    </main>
+  
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

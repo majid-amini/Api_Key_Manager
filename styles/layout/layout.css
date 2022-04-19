@@ -1,0 +1,131 @@
+@import './reset.css';
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    padding: 0 3rem;
+}
+.section_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left--total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.left--total form {
+    
+    padding: 2rem;
+    border-radius: 1rem;
+}
+input {
+    width: 25rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    margin-top: 1.2rem;
+}
+.submit--total {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+.submit--total button {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background: rgb(247,128,16);
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
+}
+.submit--total button:hover{
+    background: orangered;
+    letter-spacing: 0.1rem; 
+}
+h3 {
+    margin-top: 1rem;
+}
+.right--total {
+    width: 100%;
+    padding: 2rem;
+}
+.right--total h2 {
+    text-align: center;
+}
+.table_container {
+    height: 30rem;
+    padding: 3rem;
+    background-color: #eee;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+.table {
+    background-color: #5d4d3d41;
+    width: 100%;
+    border-radius: 0.8rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table thead {
+    background-color: #fff;
+    height: 3rem;
+}
+.table thead tr td {
+    width: 20rem;
+}
+.table thead tr td:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+} 
+.table thead tr td:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.table_buttons {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+#btn_edit, #btn_delete {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: snow;
+    transition: all 0.3s ease-in-out;
+}
+#btn_edit {
+    background: rgb(247,128,16);
+    
+}
+#btn_edit:hover {
+    background-color: orangered;
+    transform: translate(-0.5rem);
+}
+#btn_delete {
+    background-color: rgba(53, 53, 221, 0.521);
+}
+#btn_delete:hover {
+    transform: translate(0.5rem);
+    background-color: rgba(53, 53, 221, 0.973);
+
+}
+
+
+
